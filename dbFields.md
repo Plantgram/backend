@@ -18,6 +18,7 @@
 - **followers** *array*
 - **likes** *array of image URLs*
 - **favorites** *array of image URLs*
+- **comments_link** *array of links to users comments*
 - **gardens** *array of gardens/albums*
 - **plants** *array of images*
 
@@ -33,6 +34,7 @@
 - **id**
 - **user_name**
 - **upload_date**
+- **public** *boolean default true*
 - **image_name** *array base64 encoded?*
 - **image_url**
 - **description**
@@ -42,4 +44,10 @@
   - optional: **user** *store username/alias array*
 - **dislikes** *int*
   - optional: **user** *store username/alias array*
-- **public** *boolean default true*
+- **comments** *array*
+  - **username**
+  - **date**
+  - **text**
+  - **comment_url**
+  - **reaction_emoji** *array*
+  
